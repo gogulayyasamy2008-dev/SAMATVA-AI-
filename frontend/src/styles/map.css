@@ -1,0 +1,50 @@
+/**
+ * SAMATVA AI — Map Stylesheet
+ * Leaflet map container and map element sizing.
+ */
+
+@import "leaflet/dist/leaflet.css";
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.leaflet-map-element {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.map-legend {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.legend-dot-high {
+  background-color: #dc2626;
+}
+
+.legend-dot-medium {
+  background-color: #d97706;
+}
+
+.legend-dot-low {
+  background-color: #16a34a;
+}

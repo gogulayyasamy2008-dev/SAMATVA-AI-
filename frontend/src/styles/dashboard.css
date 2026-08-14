@@ -1,0 +1,196 @@
+/**
+ * SAMATVA AI — Dashboard Stylesheet
+ * Layout for dashboard grid, indicators, cards, and recommendations.
+ */
+
+.dashboard-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header-container {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+}
+
+.header-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.header-subtitle {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+.header-badge {
+  font-size: 0.8rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Dashboard Content Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboard-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Village Selector Controls */
+.selector-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.selector-dropdown {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Indicator Grid */
+.indicators-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.indicator-item {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+.indicator-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.indicator-val {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+/* Vulnerability & Key Drivers */
+.vulnerability-score-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: var(--color-bg);
+  border-radius: var(--radius-sm);
+}
+
+.drivers-list {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.drivers-list li {
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+}
+
+/* Recommendation items */
+.recommendation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.recommendation-card {
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary-light);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+}
+
+.rec-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.rec-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* SDG impact list */
+.sdg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.sdg-card {
+  border: 1px solid var(--color-border);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+}
+
+.sdg-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.sdg-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sdg-target-ref {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}

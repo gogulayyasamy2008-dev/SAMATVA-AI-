@@ -1,0 +1,5 @@
+village_id,village_name,district,state,latitude,longitude,vulnerability_score,vulnerability_class,matlab_risk_class,class_matches_frontend,nearest_neighbor_km,local_weighted_vulnerability,spatial_hotspot
+VIL-IN-001,Karanjia Tribal Hamlet,Mayurbhanj,Odisha,21.7584,85.9722,86,High,High,1,162.6,77.91,1
+VIL-IN-002,Birsa Tola Settlement,Khunti,Jharkhand,23.0728,85.2789,79,High,High,1,162.6,85.17,1
+VIL-IN-003,Gudaguda Valley,Koraput,Odisha,18.8123,82.7108,55,Medium,Medium,1,472.21,77.91,0
+VIL-IN-004,Chhindwara Forest Border,Chhindwara,Madhya Pradesh,22.0574,78.9382,62,Medium,Medium,1,533.54,62.88,0
